@@ -235,5 +235,17 @@ namespace _1131418_杜語喬_WordCards
             }
 
         }
+
+        private void frmWordCards_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // 顯示二次確認對話框
+            DialogResult result = MessageBox.Show("確定要結束應用程式嗎?", "結束確認", 
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            // 如果使用者點擊「否」，則取消退出
+            if (result == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

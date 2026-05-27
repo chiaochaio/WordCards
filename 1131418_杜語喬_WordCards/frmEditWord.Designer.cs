@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.grpWord = new System.Windows.Forms.GroupBox();
-            this.grpPhonogram = new System.Windows.Forms.GroupBox();
-            this.grpSoundPath = new System.Windows.Forms.GroupBox();
-            this.grpExplain = new System.Windows.Forms.GroupBox();
             this.txtWord = new System.Windows.Forms.TextBox();
+            this.grpPhonogram = new System.Windows.Forms.GroupBox();
             this.txtPhonogram = new System.Windows.Forms.TextBox();
+            this.grpSoundPath = new System.Windows.Forms.GroupBox();
             this.txtSoundPath = new System.Windows.Forms.TextBox();
+            this.grpExplain = new System.Windows.Forms.GroupBox();
             this.txtExplain = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.grpWord.SuspendLayout();
@@ -45,6 +45,7 @@
             // 
             // grpWord
             // 
+            this.grpWord.BackColor = System.Drawing.Color.Azure;
             this.grpWord.Controls.Add(this.txtWord);
             this.grpWord.Font = new System.Drawing.Font("微軟正黑體", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.grpWord.Location = new System.Drawing.Point(12, 12);
@@ -54,8 +55,16 @@
             this.grpWord.TabStop = false;
             this.grpWord.Text = "單字";
             // 
+            // txtWord
+            // 
+            this.txtWord.Location = new System.Drawing.Point(6, 25);
+            this.txtWord.Name = "txtWord";
+            this.txtWord.Size = new System.Drawing.Size(358, 38);
+            this.txtWord.TabIndex = 0;
+            // 
             // grpPhonogram
             // 
+            this.grpPhonogram.BackColor = System.Drawing.Color.LightCyan;
             this.grpPhonogram.Controls.Add(this.txtPhonogram);
             this.grpPhonogram.Font = new System.Drawing.Font("微軟正黑體", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.grpPhonogram.Location = new System.Drawing.Point(12, 87);
@@ -65,8 +74,16 @@
             this.grpPhonogram.TabStop = false;
             this.grpPhonogram.Text = "音標";
             // 
+            // txtPhonogram
+            // 
+            this.txtPhonogram.Location = new System.Drawing.Point(6, 29);
+            this.txtPhonogram.Name = "txtPhonogram";
+            this.txtPhonogram.Size = new System.Drawing.Size(358, 38);
+            this.txtPhonogram.TabIndex = 1;
+            // 
             // grpSoundPath
             // 
+            this.grpSoundPath.BackColor = System.Drawing.Color.PaleTurquoise;
             this.grpSoundPath.Controls.Add(this.txtSoundPath);
             this.grpSoundPath.Font = new System.Drawing.Font("微軟正黑體", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.grpSoundPath.Location = new System.Drawing.Point(12, 166);
@@ -76,8 +93,16 @@
             this.grpSoundPath.TabStop = false;
             this.grpSoundPath.Text = "音檔路徑";
             // 
+            // txtSoundPath
+            // 
+            this.txtSoundPath.Location = new System.Drawing.Point(6, 28);
+            this.txtSoundPath.Name = "txtSoundPath";
+            this.txtSoundPath.Size = new System.Drawing.Size(358, 38);
+            this.txtSoundPath.TabIndex = 2;
+            // 
             // grpExplain
             // 
+            this.grpExplain.BackColor = System.Drawing.Color.MediumTurquoise;
             this.grpExplain.Controls.Add(this.txtExplain);
             this.grpExplain.Font = new System.Drawing.Font("微軟正黑體", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.grpExplain.Location = new System.Drawing.Point(12, 244);
@@ -86,27 +111,6 @@
             this.grpExplain.TabIndex = 3;
             this.grpExplain.TabStop = false;
             this.grpExplain.Text = "解釋";
-            // 
-            // txtWord
-            // 
-            this.txtWord.Location = new System.Drawing.Point(6, 25);
-            this.txtWord.Name = "txtWord";
-            this.txtWord.Size = new System.Drawing.Size(358, 38);
-            this.txtWord.TabIndex = 0;
-            // 
-            // txtPhonogram
-            // 
-            this.txtPhonogram.Location = new System.Drawing.Point(6, 29);
-            this.txtPhonogram.Name = "txtPhonogram";
-            this.txtPhonogram.Size = new System.Drawing.Size(358, 38);
-            this.txtPhonogram.TabIndex = 1;
-            // 
-            // txtSoundPath
-            // 
-            this.txtSoundPath.Location = new System.Drawing.Point(6, 28);
-            this.txtSoundPath.Name = "txtSoundPath";
-            this.txtSoundPath.Size = new System.Drawing.Size(358, 38);
-            this.txtSoundPath.TabIndex = 2;
             // 
             // txtExplain
             // 
@@ -118,13 +122,14 @@
             // 
             // btnSave
             // 
+            this.btnSave.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnSave.Font = new System.Drawing.Font("微軟正黑體", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnSave.Location = new System.Drawing.Point(259, 495);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(123, 39);
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "儲存";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // frmEditWord
